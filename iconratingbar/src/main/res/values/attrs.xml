@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IconRatingBar">
+        <attr name="emptyStar" format="reference" />
+        <attr name="filledStar" format="reference" />
+        <attr name="halfStar" format="reference" />
+        <attr name="starSize" format="dimension" />
+        <attr name="starSpacing" format="dimension" />
+    </declare-styleable>
+</resources>
