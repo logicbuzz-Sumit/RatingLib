@@ -41,7 +41,7 @@ android {
 }
 
 dependencies {
-    implementation("com.github.logicbuzz-Sumit:RatingLib:1.0.2")
+    implementation("com.github.logicbuzz-Sumit.RatingLib:iconratingbar:1.0.3")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

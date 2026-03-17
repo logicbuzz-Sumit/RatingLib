@@ -35,6 +35,10 @@ android {
         jvmTarget = "11"
     }
 
+    publishing {
+        singleVariant("release")
+    }
+
 }
 
 afterEvaluate {
@@ -42,13 +46,14 @@ afterEvaluate {
         publications {
             create<MavenPublication>("release") {
                 from(components["release"])
-                groupId = "com.github.logicbuzz-Sumit"
-                artifactId = "RatingLib"
+                groupId = "com.github.logicbuzz-Sumit.RatingLib"
+                artifactId = "iconratingbar"
                 version = "1.0.3"
             }
         }
     }
 }
+
 
 dependencies {
     implementation(libs.androidx.core.ktx)
