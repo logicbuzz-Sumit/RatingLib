@@ -1,6 +1,8 @@
+import org.gradle.api.publish.maven.MavenPublication
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("maven-publish")
 }
 
 android {
@@ -31,6 +33,20 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.logicbuzz-Sumit"
+                artifactId = "RatingLib"
+                version = "1.0.3"
+            }
+        }
     }
 }
 
