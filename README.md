@@ -32,7 +32,7 @@ Then add the dependency in your **app module build.gradle**
 
 ```gradle
 dependencies {
-    implementation 'com.github.YOUR_USERNAME:RatingLib:1.0.0'
+    implementation 'com.github.logicbuzz-Sumit:RatingLib:1.0.0'
 }
 ```
 
