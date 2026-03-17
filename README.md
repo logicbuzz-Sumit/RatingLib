@@ -45,7 +45,7 @@ dependencies {
 ## XML Layout
 
 ```xml
-<com.logicbuzz.iconratingbar.IconRatingBar
+<com.sumit.iconratingbar.IconRatingBar
     android:id="@+id/ratingBar"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
